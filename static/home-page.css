@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+}
+
+#city-name-form {
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*text-align: left;*/
+    background-color: #820933;
+    /*background-color: #721121;*/
+    padding: 10px 20px;
+    /*height: 100px;*/
+    display: inline-block;
+    border-radius: 8px;
+    /*width: 300px;*/
+    /*margin: auto;*/
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+#city-name-input {
+    background-color: inherit;
+    color: #F7F7FF;
+}
+
+#city-name-button {
+    background-color: #D17A22;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.city-div {
+    /*margin-top: 30px;*/
+    margin: 15px auto ;
+    background-color: #F5EE9E;
+    border-radius: 10px;
+    /*color: #F7F7FF;*/
+    /*display: inline-block;*/
+    width: 23%;
+    display: flex;
+}
+
+.condition-div{
+    display: inline-block;
+    /*float: left;*/
+    width: 50%;
+}
+
+.condition-img {
+    /*height: 75%;*/
+}
+
+.condition-text {
+    margin-bottom: 10px;
+}
+
+.data-div {
+    text-align: left;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.data {
+    margin-top: 5px;
+}

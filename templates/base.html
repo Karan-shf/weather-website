@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+    {% block header_references %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>jl_bing weather app</h1>
+    </header>
+    {% block content %}{% endblock %}
+    {% block footer_references %}{% endblock %}
+</body>
+</html>

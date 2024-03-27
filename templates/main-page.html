@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Weather App
+{% endblock %}
+
+{% block header_references %}
+    <link rel="stylesheet" href="{% static 'home-page.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <div>
+        <form id="city-name-form" method="post" action="{% url 'main-page' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input id="city-name-input" name="title" type="text" placeholder="Enter The City Name">
+            <button id="city-name-button" type="submit">Submit</button>
+        </form>
+    </div>
+
+    {% for data in data_list %}
+    	<div class="city-div">
+            <div class="condition-div">
+                <img class="condition-img" src="{{ data.weather_image }}" alt="{{ data.city }} condition image">
+                <p class="condition-text">{{ data.condition }}</p>
+            </div>
+            <div class="data-div">
+                <h2 class="data">{{ data.city }}</h2>
+                <h4 class="data">{{ data.temperature_celsius }}&#8451 - {{ data.temperature_fahrenheit }}&#8457</h4>
+                <p class="data">{{ data.country }}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}

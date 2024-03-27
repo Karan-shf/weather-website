@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #6C999D;
+    text-align: center;
+    text-transform: uppercase;
+    height: 150px;
+    color: #F7F7FF;
+    position: sticky;
+    top: 0;
+    /*z-index: 100;*/
+}
+
+header h1 {
+    margin-top: 50px;
+    display: inline-block;
+}
